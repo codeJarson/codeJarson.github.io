@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://codeJarson.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Jun 2019 22:07:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://codeJarson.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>个人博客搭建</title>
+      <link>https://codeJarson.github.io/post/blog/</link>
+      <pubDate>Mon, 17 Jun 2019 22:07:20 +0800</pubDate>
+      
+      <guid>https://codeJarson.github.io/post/blog/</guid>
+      <description>windows下搭建Hugo博客步骤如下： 1.通过https://github.com/gohugoio/hugo/releases 找到相对应得windows版本压缩文件下载（32位或64位）。  2.下载成功后。通过命令行程序（cmd），敲：hugo version   3.开始用Hugo搭建个人博客 输入命令： hugo new site mytBlog（文件名）   4.可以输入dir或在C盘下用户文件夹去找，是否有相应得文件夹myBlog（文件名）   5.进入myBlog（命令：cd myBlog） ,查看（dir）当中得内容   6.我们可以去官网下载主题 ：https://themes.gohugo.io/，如图：   7.这里我选择m10c，以他为例子，具体操作如图显示。注：前提一定要下git并且配置好！   8.主题下载成功后如图：   9.我们可以去themes下，看看是否有该主题   10.启动博客命令，输入：hugo server -t m10c --buildDrafts   11.输入网址   12.在根目录下创建文章：   13.我们可以使用VS Code写我们得个人博客 ， 如图：   14.再次目录下输入：hugo server -t m10c --buildDrafts ， 并打开网址。  15.我们将博客部署到远端github上，首先创建仓库。 16.当前是一个空仓库，接下来敲命令hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;ldquo;地址&amp;rdquo; &amp;ndash;buildDrafts，如图：  17.</description>
+    </item>
+    
+  </channel>
+</rss>
