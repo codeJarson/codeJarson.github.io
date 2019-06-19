@@ -3,29 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://codeJarson.github.io/</loc>
-    <lastmod>2019-06-17T22:07:20+08:00</lastmod>
+    <loc>https://codejarson.github.io/post/blog2/</loc>
+    <lastmod>2019-06-18T17:51:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codejarson.github.io/</loc>
+    <lastmod>2019-06-18T17:51:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://codeJarson.github.io/post/</loc>
-    <lastmod>2019-06-17T22:07:20+08:00</lastmod>
+    <loc>https://codejarson.github.io/post/</loc>
+    <lastmod>2019-06-18T17:51:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://codeJarson.github.io/post/blog/</loc>
+    <loc>https://codejarson.github.io/post/blog/</loc>
     <lastmod>2019-06-17T22:07:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://codeJarson.github.io/categories/</loc>
+    <loc>https://codejarson.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://codeJarson.github.io/tags/</loc>
+    <loc>https://codejarson.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
