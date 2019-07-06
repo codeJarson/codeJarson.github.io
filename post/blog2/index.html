@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>Blog2 // My New Hugo Site</title>
+    <title>JavaScript: 总结篇 // My New Hugo Site</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.55.6" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,11 +11,31 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blog2"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="JavaScript: 总结篇"/>
+<meta name="twitter:description" content="#JavaScript&ndash;总结篇： ####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;许久没有更新过个人博客了，来捞一手把。首先，我要好好地感谢下codeSheep羊哥和how2j.cn的站长。他们成为了我大学生涯中引路人。羊哥他所给予了我写博客的勇气，而站长所给予了我写博客的资本。 ####好了，切入正题，这一次，我通过一个how2j.cn上的一个例子，来深入了解JavaScript，DOM. 完整的JavaScript由语言基础，BOM和DOM组成。 - JavaScript：通过该语言可以实现用户与网页的交互性。 - BOM:浏览器对象模型(Browser Object Model),即一些window窗口对象，Screen客户端对象等。不重点讲。 - DOM：文档对象模式(Document Object Model),相当于Java中以面向对象的角度去看html标签。
+####不多BB了，直接上图。 - ### html页面文件
+####细节分析： &gt;javascript:void(0)
+1.该语句会使得超链接标签元素不作跳转，平常也可以 href = &quot;#&quot;代替。
+2.注：我们在html文件中引入js文件时，通常会放到&lt;head&gt;标签里面且&lt;/body&gt;下方，是为了确保页面元素成功加载完后，在执行js文件中的代码。 没有目标，那你日复一日的敲代码为了什么？
+ onclick= &ldquo;sort(0)&rdquo;
+ 为元素附上点击事件，至于sort(0),看后面js的详情。  ### css样式文件 1.为html添加样式，就如同人靠衣装，佛靠金装。 &gt;border-collapse:collapse;  边框合并，相邻的框合并到一起。  js文件 &emsp;实现目标： 表格排序。通过单击表格第一行的列名，使得每列按照自身排序（升序，降序） ####&emsp;细节分析：
+1.全局变量reverse，可以把它看做一枝旗，用于后期的判断。
+2.comparator(tr1,tr2):比较器，相当于我们自定义规则，而这里的规则是取得两个tr的子列中的内容进行比较，reverse为true时，则进行降序，反之。这里的td2-td1与td2.localeCompare(td1)效果一样。
+3.trs.sort(comparator):使用比较器中的规则进行排序，这里会使得每个tr的位置发生变化，所以我们才需要将发生变化后的tr重新放入tbody中。
+  ###总结： &emsp;&emsp;JavaScript主要还是用于网页交互，通过一些事件，使得网页具有一定的动态能力。注意，JavaScript是一种直译式脚本语言。"/>
 
-    <meta property="og:title" content="Blog2" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="JavaScript: 总结篇" />
+<meta property="og:description" content="#JavaScript&ndash;总结篇： ####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;许久没有更新过个人博客了，来捞一手把。首先，我要好好地感谢下codeSheep羊哥和how2j.cn的站长。他们成为了我大学生涯中引路人。羊哥他所给予了我写博客的勇气，而站长所给予了我写博客的资本。 ####好了，切入正题，这一次，我通过一个how2j.cn上的一个例子，来深入了解JavaScript，DOM. 完整的JavaScript由语言基础，BOM和DOM组成。 - JavaScript：通过该语言可以实现用户与网页的交互性。 - BOM:浏览器对象模型(Browser Object Model),即一些window窗口对象，Screen客户端对象等。不重点讲。 - DOM：文档对象模式(Document Object Model),相当于Java中以面向对象的角度去看html标签。
+####不多BB了，直接上图。 - ### html页面文件
+####细节分析： &gt;javascript:void(0)
+1.该语句会使得超链接标签元素不作跳转，平常也可以 href = &quot;#&quot;代替。
+2.注：我们在html文件中引入js文件时，通常会放到&lt;head&gt;标签里面且&lt;/body&gt;下方，是为了确保页面元素成功加载完后，在执行js文件中的代码。 没有目标，那你日复一日的敲代码为了什么？
+ onclick= &ldquo;sort(0)&rdquo;
+ 为元素附上点击事件，至于sort(0),看后面js的详情。  ### css样式文件 1.为html添加样式，就如同人靠衣装，佛靠金装。 &gt;border-collapse:collapse;  边框合并，相邻的框合并到一起。  js文件 &emsp;实现目标： 表格排序。通过单击表格第一行的列名，使得每列按照自身排序（升序，降序） ####&emsp;细节分析：
+1.全局变量reverse，可以把它看做一枝旗，用于后期的判断。
+2.comparator(tr1,tr2):比较器，相当于我们自定义规则，而这里的规则是取得两个tr的子列中的内容进行比较，reverse为true时，则进行降序，反之。这里的td2-td1与td2.localeCompare(td1)效果一样。
+3.trs.sort(comparator):使用比较器中的规则进行排序，这里会使得每个tr的位置发生变化，所以我们才需要将发生变化后的tr重新放入tbody中。
+  ###总结： &emsp;&emsp;JavaScript主要还是用于网页交互，通过一些事件，使得网页具有一定的动态能力。注意，JavaScript是一种直译式脚本语言。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://codejarson.github.io/post/blog2/" />
 <meta property="article:published_time" content="2019-06-18T17:51:13&#43;08:00"/>
@@ -36,7 +56,7 @@
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">Blog2</h1>
+      <h1 class ="post-title">JavaScript: 总结篇</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -50,11 +70,66 @@
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          0 min read
+          1 min read
         </div></div>
     </header>
     <div class="post-content">
       
+
+<p>#JavaScript&ndash;总结篇：
+####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;许久没有更新过个人博客了，来捞一手把。首先，我要好好地感谢下codeSheep羊哥和how2j.cn的站长。他们成为了我大学生涯中引路人。羊哥他所给予了我写博客的勇气，而站长所给予了我写博客的资本。
+####好了，切入正题，这一次，我通过一个how2j.cn上的一个例子，来深入了解JavaScript，DOM.
+完整的JavaScript由语言基础，BOM和DOM组成。
+- JavaScript：通过该语言可以实现用户与网页的交互性。
+- BOM:浏览器对象模型(Browser Object Model),即一些window窗口对象，Screen客户端对象等。不重点讲。
+- DOM：文档对象模式(Document Object Model),相当于Java中以面向对象的角度去看html标签。</p>
+
+<p>####不多BB了，直接上图。
+- ### html页面文件<br />
+####细节分析：
+&gt;javascript:void(0)</p>
+
+<p>1.该语句会使得超链接标签元素不作跳转，平常也可以 <code>href = &quot;#&quot;</code>代替。</p>
+
+<p>2.注：我们在html文件中引入js文件时，通常会放到<code>&lt;head&gt;</code>标签里面且<code>&lt;/body&gt;</code>下方，是为了确保页面元素成功加载完后，在执行js文件中的代码。
+<em>没有目标，那你日复一日的敲代码为了什么？</em></p>
+
+<blockquote>
+<p>onclick= &ldquo;sort(0)&rdquo;</p>
+</blockquote>
+
+<p>为元素附上点击事件，至于<code>sort(0)</code>,看后面js的详情。
+<img src="https://raw.githubusercontent.com/codeJarson/managerBlogPicture/master/jsPicture/answer.PNG" alt="html" /></p>
+
+<ul>
+<li>### css样式文件
+1.为html添加样式，就如同人靠衣装，佛靠金装。
+&gt;border-collapse:collapse;</li>
+</ul>
+
+<p>边框合并，相邻的框合并到一起。
+<img src="https://raw.githubusercontent.com/codeJarson/managerBlogPicture/master/jsPicture/answerCss.PNG" alt="css" /></p>
+
+<ul>
+<li><h3 id="js文件">js文件</h3>
+
+<h4 id="emsp-实现目标">&emsp;实现目标：</h4>
+
+<p>表格排序。通过单击表格第一行的列名，使得每列按照自身排序（升序，降序）
+####&emsp;细节分析：</p>
+
+<p>1.全局变量reverse，可以把它看做一枝旗，用于后期的判断。</p>
+
+<p>2.comparator(tr1,tr2):比较器，相当于我们自定义规则，而这里的规则是取得两个tr的子列中的内容进行比较，reverse为true时，则进行降序，反之。这里的td2-td1与<code>td2.localeCompare(td1)</code>效果一样。</p>
+
+<p>3.trs.sort(comparator):使用比较器中的规则进行排序，这里会使得每个tr的位置发生变化，所以我们才需要将发生变化后的tr重新放入tbody中。</p></li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/codeJarson/managerBlogPicture/master/jsPicture/answerJs.PNG" alt="js" /></p>
+
+<p>###总结：
+&emsp;&emsp;JavaScript主要还是用于网页交互，通过一些事件，使得网页具有一定的动态能力。注意，JavaScript是一种<strong>直译式脚本语言</strong>。</p>
+
     </div>
     <div class="post-footer">
       
